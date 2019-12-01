@@ -1,0 +1,41 @@
+/*******************/
+/* La typographie */
+/*****************/
+
+@font-face{
+    font-family : 'GTWalsheim';
+    src:url('GT-Walsheim-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    /*La Typo */
+    font-family: 'GTWalsheim', 'Verdana','sans-serif';
+    font-size : 14px;
+
+    /*La couleur */
+    color : #000;
+
+    /*Hauteur des ligne*/
+    line-height: 1.8;
+}
+
+/**********************/
+/* Les éléments HTML */
+/**********************/
+
+#logoHeader{
+    display: block;
+    margin: auto;
+}
+
+.form-group{
+    text-align: center;
+    font-size : 18px;
+    color : #6763F7;
+}
+
+.form-group input{
+    margin: auto;
+}
