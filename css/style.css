@@ -19,14 +19,13 @@ body{
 
     /*Hauteur des ligne*/
     line-height: 1.8;
+
+    /*Background*/
 }
 
 /**********************/
 /* Les éléments HTML */
 /**********************/
-.col-sm-12{
-    background: url('../img/Confettis_01.svg') top left no-repeat;
-}
 
 #logoHeader{
     display: block;
