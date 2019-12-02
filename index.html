@@ -28,7 +28,7 @@
   <header> 
     <div class="col-sm-12">
 
-      <div class=" container">
+      <div>
         <img id="logoHeader" src="img/mosaic_01.png">
       </div>
 
@@ -46,9 +46,7 @@
         <div class="form-group">
           <label class="text-center">Votre nom</label>
           </br>
-          <div class="col-sm-6">
-            <input type="mail" class="form-control" name="mail" placeholder="Entrer votre mail" id="mailNewsletter"/>
-          </div>
+          <input type="mail" class="form-control col-sm-6" name="mail" placeholder="Entrer votre mail" id="mailNewsletter"/>
         </div>
 
         </br>
@@ -57,28 +55,24 @@
         <div class="form-group">
           <label class="text-center">Votre adresse e-mail</label>
           </br>
-          <div class="col-sm-6">
+
             <input type="password" class="form-control" name="password" placeholder="Entrer votre mot de passe" id="passwordNewsletter" />
-          </div>
-        </div>
 
-        </br>
-        </br>
-
-        <div class="form-check">
-          <div class="col-sm-6">
-            <input class="form-check-input" type="checkbox" id="checkCU" />
-            <label class="form-check-label">J'accepte les conditions d'utilisations</label>
-          </div>
         </div>
 
         </br>
         </br>
 
         <div class="form-group">
-          <div class="col-sm-4">
-            <button class="btn btn-muted btn-lg" type="submit" id="submitNewsletter">S'abonner</button>
-          </div>
+          <input class="form-check-input" type="checkbox" id="checkCU" />
+          <label class="form-check-label">J'accepte les <a href="cUtilisation.html">conditions d'utilisations</a></label>
+        </div>
+
+        </br>
+        </br>
+
+        <div class="form-group">
+          <button class="btn btn-lg" type="submit" id="submitNewsletter">S'abonner</button>
         </div>
       </form>
     </div>

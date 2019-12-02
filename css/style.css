@@ -38,4 +38,27 @@ body{
 
 .form-group input{
     margin: auto;
+    text-align: center;
+    border-radius: 20px 20px;
+}
+
+.form-check-label{
+    color: #000;
+}
+.form-check-label a{
+    color: #000;
+}
+
+.form-check-label a:hover{
+    color: #6763F7;
+    text-decoration: underline;
+}
+
+#submitNewsletter{
+    display: block;
+    margin: auto;
+    text-align: center;
+
+    color: #fff;
+    background-color: #6763F7;
 }
