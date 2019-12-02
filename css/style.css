@@ -24,6 +24,9 @@ body{
 /**********************/
 /* Les éléments HTML */
 /**********************/
+.col-sm-12{
+    background: url('../img/Confettis_01.svg') top left no-repeat;
+}
 
 #logoHeader{
     display: block;
