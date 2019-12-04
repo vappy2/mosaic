@@ -26,3 +26,8 @@ body{
 /**********************/
 /* Les éléments HTML */
 /**********************/
+
+article{
+    padding-bottom:70px; 
+    padding-top: 20px;
+}
