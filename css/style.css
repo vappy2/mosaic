@@ -15,7 +15,7 @@ body{
     font-size : 14px;
 
     /*La couleur */
-    color : #000;
+    color : #1A1864;
 
     /*Hauteur des ligne*/
     line-height: 1.8;
@@ -31,3 +31,15 @@ article{
     padding-bottom:70px; 
     padding-top: 20px;
 }
+
+/************/
+/* La navbar*/
+/************/
+nav ul li{
+    padding-top : 15px;
+}
+
+nav ul li a{
+    color: #1A1864;
+}
+
