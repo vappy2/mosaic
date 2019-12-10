@@ -43,3 +43,10 @@ nav ul li a{
     color: #1A1864;
 }
 
+#imgMosaic{
+    float: right;
+}
+
+#imgMosaic img{
+    width: 305px;
+}
