@@ -27,9 +27,6 @@ body{
     line-height: 1.8;
 
     /*Background*/
-
-    /*Margin*/
-    margin: 20px;
 }
 
 /**********************/
@@ -94,6 +91,7 @@ nav ul li a{
 /**********/
 #textMosaic{
     margin: 40px;
+    margin-bottom: 0;
 }
 
 #textMosaic p,
@@ -142,7 +140,8 @@ nav ul li a{
 /*ADN*/
 /****/
 #imgADN{
-    margin: 50px;
+    margin: 90px;
+    margin-right: 0;
 }
 
 #imgADN img{
@@ -155,9 +154,52 @@ nav ul li a{
 }
 
 #textADN{
-    top: 80px;
+    top: 90px;
+}
+/***********/
+/*Solution*/
+/*********/
+#video{
+    background-color: rgba(103,99,247,0.3);
+}
+
+#video h3{
+    margin-left: 40px;
+    padding-left: 50px;
+}
+
+#discoverButton{
+    position: relative;
+    top: 25px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    background-color: #646DEE;
+    font-weight: bold;
+    color:#fff;
+    border-radius: 5px;
 }
 
 /*********/
 /*footer*/
 /*******/
+
+footer{
+    background-color: #1A1864;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px;
+    line-height: 50px;;
+}
+
+footer li{
+    color: #fff;
+}
+
+footer a{
+    color: #fff;
+}
+
+footer a:hover{
+    color: #fff;
+}
