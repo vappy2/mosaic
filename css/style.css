@@ -6,13 +6,19 @@
     font-family : 'GTWalsheim';
     src:url('GT-Walsheim-Regular.otf') format('opentype');
     font-weight: normal;
-    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Vesterbro';
+    src: url('TRYVesterbro-Poster.otf') format('opentype');
+    font-weight: normal;
 }
 
 body{
     /*La Typo */
     font-family: 'GTWalsheim', 'Verdana','sans-serif';
-    font-size : 14px;
+    font-size : 25px;
+    line-height: 40px;
 
     /*La couleur */
     color : #1A1864;
@@ -21,17 +27,52 @@ body{
     line-height: 1.8;
 
     /*Background*/
+
+    /*Margin*/
+    margin: 20px;
 }
 
 /**********************/
 /* Les éléments HTML */
 /**********************/
+.container{
+    margin: 40px;
+}
 
 #mosaic,
 #adn,
 #solution{
     padding-bottom:70px; 
-    padding-top: 20px;
+    padding-top: 40px;
+}
+h1{
+    font-family: 'Vesterbro', sans-serif;
+    font-size: 55px;
+    line-height: 50px;
+}
+
+h2{
+    font-family: 'Vesterbro', sans-serif;
+    font-size: 35px;
+    line-height: 50px;
+}
+
+h3{
+    font-family : 'Vesterbro', sans-serif;
+    font-size : 45px;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    color: #1A1864;
+}
+
+a:hover{
+    color: #1A1864;
+    text-decoration: none;;
 }
 
 /************/
@@ -49,13 +90,74 @@ nav ul li a{
     width: 200px;
 }
 /************/
-/*Section 1*/
+/*Mosaic*/
 /**********/
+#textMosaic{
+    margin: 40px;
+}
+
+#textMosaic p,
+#textMosaic h1,
+#textMosaic h2{
+    margin-left: 50px;
+}
 
 #imgMosaic{
     float: right;
+    height: 600px;
 }
 
-#imgMosaic img{
-    width: 305px;
+.superpose1{
+    position: relative;
+    z-index: 1;
 }
+
+.superpose2{
+    position: relative;
+    z-index: 0;
+    bottom : 480px;
+    left: 20px;
+}
+#imgMosaic img{
+    width: 430px;
+    float: right;
+}
+
+#dropdownButton{
+    display: block;
+    margin: auto;
+    text-align: center;
+    background-color: #6764F7;
+    border-radius: 50px;
+    width: 3%;
+}
+
+.violet{
+    color: #6764F7;
+}
+.rose{
+    color: #ED1E79;
+}
+/******/
+/*ADN*/
+/****/
+#imgADN{
+    margin: 50px;
+}
+
+#imgADN img{
+    width: 470px;
+    margin-left: 100px;
+}
+
+#imgADN h3{
+    padding-bottom: 10px; 
+}
+
+#textADN{
+    top: 80px;
+}
+
+/*********/
+/*footer*/
+/*******/
