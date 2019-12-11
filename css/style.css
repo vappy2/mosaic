@@ -27,7 +27,9 @@ body{
 /* Les éléments HTML */
 /**********************/
 
-article{
+#mosaic,
+#adn,
+#solution{
     padding-bottom:70px; 
     padding-top: 20px;
 }
@@ -35,13 +37,20 @@ article{
 /************/
 /* La navbar*/
 /************/
-nav ul li{
-    padding-top : 15px;
+.navbar-nav li{
+    margin: 5px;
+    float: right;
 }
 
 nav ul li a{
     color: #1A1864;
 }
+.navbar-brand img{
+    width: 200px;
+}
+/************/
+/*Section 1*/
+/**********/
 
 #imgMosaic{
     float: right;
