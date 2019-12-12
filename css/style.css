@@ -122,8 +122,10 @@ nav ul li a{
 #textMosaic{
     margin: 40px;
     margin-bottom: 0;
-}
 
+    background: url('../img/MOTIFS_UI/img_o_violet@3x.png') bottom left no-repeat;
+    background-size: 150px;
+}
 #textMosaic p,
 #textMosaic h1,
 #textMosaic h2{
@@ -133,6 +135,8 @@ nav ul li a{
 #imgMosaic{
     float: right;
     height: 600px;
+
+    /*background: url('../img/MOTIFS_UI/img_lignes_roses@2x.png') right no-repeat;*/
 }
 
 .superpose1{
@@ -219,6 +223,12 @@ nav ul li a{
 
 #textADN{
     top: 90px;
+    background: url('../img/MOTIFS_UI/img_rond_rose@2x.png') top right no-repeat;
+    background-size: 100px;;
+}
+
+#textADN p{
+    padding-top: 50px;
 }
 /***********/
 /*Solution*/
@@ -449,6 +459,18 @@ cursor: pointer;
 
 .carousel_pagination_button--active, .carousel_pagination_button:hover {
 transform: scale(1.4);
+}
+
+#team{
+    background: url('../img/MOTIFS_UI/img_o_rose@2x.png') bottom right no-repeat;
+    background-size: 150px;;
+}
+
+#team h3{
+    padding: 50px 0;
+    margin-bottom: 20px;
+
+    
 }
 
 /* @media screen and (min-width: 800px) {
