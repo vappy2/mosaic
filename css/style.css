@@ -69,14 +69,15 @@ a{
 
 a:hover{
     color: #1A1864;
-    text-decoration: none;;
+    text-decoration: underline;
+    text-decoration-color: #ED1E79;
 }
 
 /************/
 /* La navbar*/
 /************/
 .navbar-nav li{
-    margin: 5px;
+    margin: 10px;
     float: right;
 }
 
@@ -168,7 +169,8 @@ nav ul li a{
     padding-left: 50px;
 }
 
-#discoverButton{
+#discoverButton,
+#contactezNous{
     position: relative;
     top: 25px;
     display: block;
@@ -220,6 +222,10 @@ footer div.col-sm-3{
     padding-bottom: 0;
 }
 
+#assocDiv{
+    margin-top: 0;
+}
+
 #social{
     display: flex;
     justify-content: space-between;
@@ -237,22 +243,120 @@ footer div.col-sm-3{
 
 .item {
     margin: 40px 10px;
-    background: #fff;
-    box-shadow: 0 10px 30px #32321a, 0 5px 15px #00001a;
+    background-color: #fff;
+    box-shadow: 0 15px 35px #3232321a,0 5px 15px #0000001a;
     transition: transform 0.3s;
     transform: translate3d(0, -1px, 0);
 }
 
-.item:hover {
-    transform: translate3d(0, -10px, 0);
+.item:hover  {
+transform: translate3d(0, -10px, 0);
 }
+
 
 .item img {
-    display: block;
-    width: 100%;
-    height: auto;
+display: block;
+width: 308px;
+}
+.item__image{
+    width: 308px;
+}
+.item_body {
+padding: 25px;
 }
 
-.item__description {
-    color: #1A1864;
-  }
+.item_title {
+font-size: 24px;
+margin-bottom: 5px;
+font-weight: bold;
+color: #232323;
+}
+
+.item_description {
+color: #585858;
+}
+
+.items {
+position: relative;
+}
+
+/**
+CAROUSEL
+*/
+.carousel {
+position: relative;
+}
+
+.carousel_container {
+transition: transform 0.3s; /*Transition du déplacement du carousel apres clic sur la fleche.*/
+transform: translate3d(0, 0, 0); /*Permet d'éviter les transformations non souhaité. Les ajouts dans le JS ecraseront cette propriété lorsqu'on souhaite effectivement faire une tranformation */
+}
+
+.carousel_container::after { /*Equivalent d'un clearfix */
+content: '';
+clear: both;
+display: table;
+}
+
+.carousel_item {
+float: left;
+}
+
+.carousel_next, .carousel_prev {
+position: absolute;
+width: 40px;
+height: 40px;
+background: #FFF url(../img/ICN/icn_fleche_droite@2x.png) center center no-repeat;
+background-size: 70px 20px;
+top: 50%;
+margin-top: -20px;
+right: -20px;
+box-shadow: 0 15px 35px #3232321a,0 5px 15px #0000001a;
+cursor: pointer;
+transition: transform 0.3s, opacity 0.3s;
+}
+
+.carousel_next:hover, .carousel_prev:hover {
+transform: scale(1.2)
+}
+
+.carousel_prev {
+background-image: url(../img/ICN/icn_fleche_gauche@2x.png);
+right: 1500px;
+left: -20px;
+}
+
+.carousel_next--hidden, .carousel_prev--hidden {
+opacity: 0;
+}
+
+.carousel_pagination {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+text-align: center;
+display: none;
+}
+
+.carousel_pagination_button {
+background-color: #fff;
+width: 10px;
+height: 10px;
+border-radius: 50%;
+display: inline-block;
+margin: 0 3px;
+box-shadow: 0 2px 5px #3232321a;
+transition: transform 0.3s;
+cursor: pointer;
+}
+
+.carousel_pagination_button--active, .carousel_pagination_button:hover {
+transform: scale(1.4);
+}
+
+/* @media screen and (min-width: 800px) {
+.carousel_pagination {
+    display: block;
+}
+} */
