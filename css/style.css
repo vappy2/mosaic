@@ -76,10 +76,10 @@ a:hover{
 /************/
 /* La navbar*/
 /************/
-.navbar-nav li{
+/*.navbar-nav li{
     margin: 10px;
     float: right;
-}
+}*/
 
 nav ul li a{
     color: #1A1864;
@@ -162,6 +162,7 @@ nav ul li a{
 /*********/
 #video{
     background-color: rgba(103,99,247,0.3);
+    margin-left: 0;
 }
 
 #video h3{
@@ -280,9 +281,6 @@ color: #585858;
 position: relative;
 }
 
-/**
-CAROUSEL
-*/
 .carousel {
 position: relative;
 }
@@ -304,13 +302,13 @@ float: left;
 
 .carousel_next, .carousel_prev {
 position: absolute;
-width: 40px;
+width: 80px;
 height: 40px;
 background: #FFF url(../img/ICN/icn_fleche_droite@2x.png) center center no-repeat;
-background-size: 70px 20px;
+background-size: 40px 20px;
 top: 50%;
 margin-top: -20px;
-right: -20px;
+right: 50px;
 box-shadow: 0 15px 35px #3232321a,0 5px 15px #0000001a;
 cursor: pointer;
 transition: transform 0.3s, opacity 0.3s;
@@ -321,10 +319,13 @@ transform: scale(1.2)
 }
 
 .carousel_prev {
-background-image: url(../img/ICN/icn_fleche_gauche@2x.png);
-right: 1500px;
-left: -20px;
+    width: 80px;
+    background-image: url(../img/ICN/icn_fleche_gauche@2x.png);
+    background-size: 70px 20px;
+    right: auto;
+    left: -20px;
 }
+
 
 .carousel_next--hidden, .carousel_prev--hidden {
 opacity: 0;
